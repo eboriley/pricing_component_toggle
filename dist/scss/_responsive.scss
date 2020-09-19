@@ -1,0 +1,36 @@
+@include media-lg{
+
+    body{
+        height: 100vh;
+        background-image: url("../images/bg-top.svg"),
+        url("../images/bg-bottom.svg");
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: right top, left bottom;
+    }
+    .container{
+       margin: 0 auto;
+    }
+
+    .our_pricing{
+        margin: 1rem 0 2.7rem 0;
+
+        span{
+            font-size: .8rem;
+        }
+    }
+    .cards_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        .card{
+           width: 50%;
+           margin:0 auto; 
+        }
+
+        .card.active{
+            padding: 3rem 2rem;     
+        }
+    }
+}

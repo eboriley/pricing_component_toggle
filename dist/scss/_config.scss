@@ -1,0 +1,28 @@
+$primary-gradient: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+$light-grayish-blue: hsl(234, 14%, 74%);
+$very-light-grayish-blue: hsl(240, 78%, 98%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0; 
+    background: $very-light-grayish-blue;
+    background-image: url("../images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right -150px top;
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
